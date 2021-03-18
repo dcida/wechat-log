@@ -1,0 +1,280 @@
+/* css初始化开始 */
+	/* 1.清除内外边距 */
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	/* 2.去除连接下划线 */
+	a {
+		text-decoration: none;
+		color: #222222;
+	}
+
+	/* 3.不应用斜体 */
+	em,
+	i {
+		font-style: normal;
+	}
+
+	/* 4.不显示列表前黑点 */
+	li {
+		list-style: none;
+	}
+
+	/* 5.低版本兼容性 */
+	img {
+		border: 0;
+		vertical-align: middle;
+	}
+
+	/* 6.鼠标样式 */
+	button {
+		cursor: pointer;
+	}
+
+	/* 7.body样式 */
+	body {
+		background-color: #f6f7f8;
+		width: 100%;
+		height: 2000px;
+		color: #1a1b1c;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	}
+
+	/* 8.清除浮动 */
+	.clearfix:after {
+		visibility: hidden;
+		clear: both;
+		display: block;
+		content: ".";
+		height: 0;
+	}
+
+	.clearfix {
+		*zoom: 1;
+	}
+
+	/* 9.隐藏样式 */
+	.none {
+		display: none;
+	}
+
+	/* css初始化结束 */
+
+	/* ------------------------------------------------------------------------ */
+
+	/* 版心 */
+	.layout-center {
+		width: 800px;
+		margin: auto;
+	}
+
+
+	/* 页眉 */
+	.header {
+		color: azure;
+		height: 56px;
+		background-color: white;
+		margin-bottom: 24px;
+
+	}
+
+	.header img {
+		display: block;
+		float: left;
+		margin: 10px;
+	}
+
+	.header h4 {
+		line-height: 35px;
+		float: left;
+		color: #222222;
+		font-weight: 400;
+		
+	}
+
+h6{font-weight: 400px;}
+
+	.header ul {
+		float: left;
+	}
+
+	/* nav-left左侧导航 */
+	.nav-left {
+		position: fixed;
+		top: 80px;
+		left: 50%;
+		margin-left: -500px;
+		height: 800px;
+		width: 100px;
+		color: #222222;
+		font-size: 16px;
+		line-height: 28px;
+		text-indent: 1rem;
+		/* 				background-color: azure;
+ */
+	}
+
+
+	/* 群发情况 */
+	.group-posting {
+		height: 180px;
+		background-color: white;
+		margin-bottom: 24px;
+	}
+	.group-posting:hover
+	{
+	box-shadow: 0px 0px 2px 1px #d8e0e8;
+	}
+
+	/* 全局样式对页面所有h4应用样式 */
+	h4 {
+		font-weight: 700;
+		padding: 10px;
+		color: #7b7f84;
+	}
+
+	.group-posting span {
+		
+		padding-left: 10px;
+		padding-right: 30px;
+		font-size: 12px;
+		line-height: 40px;
+		
+	}
+	#time
+	{
+		line-height: 12px;
+		position: relative;
+		top: -5px;
+	}
+
+	.group-posting img {
+		width: 200px;
+		
+	}
+
+	.group-posting h5 {
+		padding-left: 10px;
+		color: #5d6064;
+	}
+
+	/* 三个div左浮动 */
+	.group-posting div {
+		float: left;
+	}
+
+	/* 概览 */
+	.overview {
+		background-color: white;
+	}
+	.overview:hover{
+		box-shadow: 0px 0px 2px 1px #d8e0e8;
+	}
+
+	.overview ul {
+		background-color: white;
+		margin-bottom: 24px;
+	}
+
+	.overview ul li {
+		display: inline-block;
+		width: 136px;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.overview h6,
+	span {
+		line-height: 2;
+	}
+
+	.overview span {
+		font-size: 20px;
+	}
+
+	/* 阅读渠道 */
+	.reading-channel {
+		background-color: white;
+		margin-bottom: 24px;
+	}
+	.reading-channel:hover{
+		box-shadow: 0px 0px 2px 1px #d8e0e8;
+	}
+
+	.reading-channel-chart img {
+		margin-bottom: 20px;
+
+	}
+
+	/* 渠道构成 */
+
+	.channel-composition {
+		margin-bottom: 24px;
+		background-color: white;
+	}
+	.channel-composition:hover{box-shadow: 0px 0px 2px 1px #d8e0e8;}
+
+	.reading-channel-chart img {}
+
+
+	.video-platform {
+		background-color: white;
+	}
+.video-platform:hover{
+	box-shadow: 0px 0px 2px 1px #d8e0e8;
+}
+	
+	
+	/* table td
+	{
+		border: 1px solid black;
+		border-collapse:collapse;  
+		border-spacing:0;  
+		padd:expression(this.cellPadding=0);  
+	} */
+	
+	
+	table
+	{border-spacing:0;  
+		padd:expression(this.cellPadding=0);  
+		padding: 5px;
+		}
+	td
+	{
+		text-align: center;
+		width: 15%;
+		border-top: 1px solid #ebefff;
+		padding: 5px;
+		font-weight: lighter;
+	}
+	
+	
+	table th {
+		font-weight: 400;
+		border-top-width: 1px;
+		border-top-style: solid;
+		border-top-color: #e2e6f6;
+		padding: 5px 0;
+	}
+	
+	
+	/* .nav-left li:hover
+	{
+		color: #ffffff;
+		background-color: #1A1B1C;
+		cursor: pointer;
+	} */
+	
+	a {
+		display: block;
+	}
+	
+	a:hover
+	{
+		
+		color: #ffffff;
+		background-color: #1A1B1C;
+		cursor: pointer;
+	}
